@@ -1,5 +1,4 @@
 #!/bin/bash
-cd weatherapp
 python manage.py migrate
 python manage.py collectstatic --noinput
-gunicorn weatherapp.wsgi
+python manage.py runserver 0.0.0.0:$PORT

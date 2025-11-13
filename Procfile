@@ -1,1 +1,1 @@
-web: bash weatherapp/start.sh
+web: gunicorn weatherapp.wsgi
